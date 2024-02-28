@@ -1,11 +1,12 @@
 import uvicorn
 from fastapi import FastAPI, Depends
-from .routers import category, product
+from .routers import category, product, story
 
 app = FastAPI()
 
 app.include_router(category.router)
 app.include_router(product.router)
+app.include_router(story.router)
 
 
 if __name__ == "__main__":
