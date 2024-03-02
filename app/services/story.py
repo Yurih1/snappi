@@ -1,0 +1,2 @@
+class StoryService:
+    pass
